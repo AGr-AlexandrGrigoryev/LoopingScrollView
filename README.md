@@ -17,6 +17,18 @@ To use the `LoopingScrollView` in your SwiftUI project, follow these steps:
 
 1. Instantiate the `LoopingScrollView` in your SwiftUI view and provide the necessary parameters, such as width, spacing, and content.
 
+```swift
+LoopingScrollView(
+    width: size.width,
+    spacing: 0,
+    items: imageItems
+) { item in
+    item.image
+        .resizable()
+        .scaledToFit()
+}
+```
+
 ## Parameters
 
 - **width**: The width of each item in the scrolling view.
