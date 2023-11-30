@@ -81,7 +81,6 @@ fileprivate struct ScrollViewHelper: UIViewRepresentable {
         return .init()
     }
 
-    
     func updateUIView(_ uiView: UIView, context: Context) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
             if let

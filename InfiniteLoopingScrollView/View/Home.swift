@@ -58,9 +58,7 @@ struct Home: View {
     }
 
     private var scrollViewWithoutPaging: some View {
-            GeometryReader {
-                let size = $0.size
-
+            GeometryReader { _ in
                 LoopingScrollView(
                     width: 300,
                     spacing: 0,
